@@ -5,6 +5,7 @@ import { calculadoraSalarioLiquido } from "./utils/calculadora_salario_liquido.j
 import { exibirMeses } from "./utils/exibir_meses.js";
 import { exibirInformacoes } from "./utils/exibir_informacoes.js";
 import { exibirQuadroFuncionarios } from "./utils/exibir_quadro_funcionarios.js";
+import { exibirDetalhamentoFuncionarios } from "./utils/exibir_detalhamento_funcionarios.js";
 
 export var empresa = {
   nome: "",
@@ -110,6 +111,10 @@ while (entra_loop == true) {
     readline.question("\nPressione ENTER para continuar...");
   } else if (opcao_escolhida == 10) {
     exibirQuadroFuncionarios();
+    // 🔹 PAUSA PARA LEITURA
+    readline.question("\nPressione ENTER para continuar...");
+  } else if (opcao_escolhida == 11) {
+    exibirDetalhamentoFuncionarios();
     // 🔹 PAUSA PARA LEITURA
     readline.question("\nPressione ENTER para continuar...");
   }

@@ -1,5 +1,5 @@
-import { calcularIRRF } from "./imposto_renda";
-import { calcularINSS } from "./inss";
+import { calcularIRRF } from "./imposto_renda.js";
+import { calcularINSS } from "./inss.js";
 
 export function salarioFerias(salario_bruto) {
   var valor_ferias = salario_bruto / 3;
