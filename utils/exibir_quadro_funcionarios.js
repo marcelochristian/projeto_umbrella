@@ -5,21 +5,21 @@ export function exibirQuadroFuncionarios() {
   var total_funcionarios = empresa.funcionarios.length - 1;
 
   console.log(`
-    FUNCIONARIOS:
-    Total de Funcionários: ${empresa.funcionarios.length}
+    👥 QUADRO DE FUNCIONÁRIOS
+    ----------------------------------------------------
+    📊 Total de Funcionários: ${empresa.funcionarios.length}
     
-    PRIMEIRO FUNCIONÁRIO
-    Nome: ${empresa.funcionarios[0].nome}
-    Cargo: ${empresa.funcionarios[0].cargo}
-    Salario: R$ ${empresa.funcionarios[0].salario_bruto}
+    🥇 PRIMEIRO FUNCIONÁRIO
+    👤 Nome: ${empresa.funcionarios[0].nome}
+    🧰 Cargo: ${empresa.funcionarios[0].cargo}
+    💰 Salário: R$ ${empresa.funcionarios[0].salario_bruto}
 
-    ÚLTIMO FUNCIONÁRIO:
+    🏁 ÚLTIMO FUNCIONÁRIO
+    👤 Nome: ${empresa.funcionarios[total_funcionarios].nome}
+    🧰 Cargo: ${empresa.funcionarios[total_funcionarios].cargo}
+    💰 Salário: R$ ${empresa.funcionarios[total_funcionarios].salario_bruto}
     
-    Nome: ${empresa.funcionarios[total_funcionarios].nome}
-    Cargo: ${empresa.funcionarios[total_funcionarios].cargo}
-    Salario: R$ ${empresa.funcionarios[total_funcionarios].salario_bruto}
-    
-    LISTA COMPLETA:
+    📋 LISTA COMPLETA:
     ${exibirListaFuncionarios()}
     `);
 }

@@ -12,30 +12,30 @@ export function calculadoraSalarioLiquido(salario_bruto) {
 
   console.log(`
     =============================================================
-                CALCULADORA DE SALARIO LIQUIDO
+                🧮 CALCULADORA DE SALÁRIO LÍQUIDO
     =============================================================
     
-    Salario bruto informado: R$ ${salario_bruto.toFixed(2)}
+    💵 Salário bruto informado: R$ ${salario_bruto.toFixed(2)}
 
     =============================================================
-                DEMONSTRATIVO DE PAGAMENTO
+                📄 DEMONSTRATIVO DE PAGAMENTO
     =============================================================
     
-    Salario Bruto:           R$ ${salario_bruto.toFixed(2)}
-    Valor FGTS   :           R$ ${valor_FGTS.toFixed(2)}
-    Desconto INSS:           R$ ${desconto_INSS.toFixed(2)}
-    Desconto IRRF:           R$ ${desconto_IRRF.toFixed(2)}  
+    💰 Salário Bruto:           R$ ${salario_bruto.toFixed(2)}
+    🏦 Valor FGTS   :           R$ ${valor_FGTS.toFixed(2)}
+    📉 Desconto INSS:           R$ ${desconto_INSS.toFixed(2)}
+    📉 Desconto IRRF:           R$ ${desconto_IRRF.toFixed(2)}  
     -------------------------------------------------------------
-    Salario Liquido:         R$ ${salario_liquido.toFixed(2)}
+    🟢 Salário Líquido:         R$ ${salario_liquido.toFixed(2)}
     
      =============================================================
-                        FORMULA DO CALCULO
+                        🧾 FÓRMULA DO CÁLCULO
     =============================================================
     
-    Salario Liquido = Salario Bruto - INSS - IRRF
+    🧩 Salário Líquido = Salário Bruto - INSS - IRRF
     
-    Salario Liquido = ${salario_bruto.toFixed(2)} - ${desconto_INSS.toFixed(2)} - ${desconto_IRRF.toFixed(2)}`);
+    🧩 Salário Líquido = ${salario_bruto.toFixed(2)} - ${desconto_INSS.toFixed(2)} - ${desconto_IRRF.toFixed(2)}`);
 
   // 🔹 PAUSA PARA LEITURA
-  readline.question("\nPressione ENTER para continuar...");
+  readline.question("\n⏸️ Pressione ENTER para continuar...");
 }

@@ -3,7 +3,7 @@ import { empresa } from "../main.js";
 import { exibirAreasdeAtuacoes } from "./exibir_areas_de_atuacoes.js";
 import { exibirMetaAnual } from "./meta_anual.js";
 
-export function exibirInformacoes() {
+export function exibirInformacoesEmpresa() {
   console.log(`
     ==========================================================
                      📊✨ CADASTRO DE EMPRESA ✨📊

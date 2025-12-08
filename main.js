@@ -3,7 +3,7 @@ import { exbirMenu } from "./utils/exbir_menu.js";
 import { exibirSoftware } from "./utils/exibir_software.js";
 import { calculadoraSalarioLiquido } from "./utils/calculadora_salario_liquido.js";
 import { exibirMeses } from "./utils/exibir_meses.js";
-import { exibirInformacoes } from "./utils/exibir_informacoes.js";
+import { exibirInformacoesEmpresa } from "./utils/exibir_informacoes_empresa.js";
 import { exibirQuadroFuncionarios } from "./utils/exibir_quadro_funcionarios.js";
 import { exibirDetalhamentoFuncionarios } from "./utils/exibir_detalhamento_funcionarios.js";
 
@@ -85,7 +85,7 @@ while (entra_loop == true) {
     // 🔹 PAUSA PARA LEITURA
     readline.question("\nPressione ENTER para continuar...");
   } else if (opcao_escolhida == 8) {
-    exibirInformacoes();
+    exibirInformacoesEmpresa();
     // 🔹 PAUSA PARA LEITURA
     readline.question("\nPressione ENTER para continuar...");
   } else if (opcao_escolhida == 9) {
