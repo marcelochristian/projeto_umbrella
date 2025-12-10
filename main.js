@@ -52,6 +52,9 @@ while (entra_loop == true) {
     empresa.cnpj = readline.question("Informe o CNPJ da empresa: ");
     empresa.inscricao_estadual = readline.question("Informe a inscrição estadual da empresa: ");
     empresa.data_fundacao = readline.question("Informe a data de fundação da empresa: ");
+    // 🔹 PAUSA PARA LEITURA
+    console.log("Dados básicos da empresa inseridos com sucesso... ");
+    readline.question("\n Pressione ENTER para continuar...");
   } else if (opcao_escolhida == 4) {
     empresa.endereco.logradouro = readline.question("Informe o logradouro da empresa: ");
     empresa.endereco.numero = readline.question("Informe o numero da empresa: ");
@@ -60,17 +63,23 @@ while (entra_loop == true) {
     empresa.endereco.cidade = readline.question("Informe a cidade da empresa: ");
     empresa.endereco.estado = readline.question("Informe o Estado da empresa: ");
     empresa.endereco.cep = readline.question("Informe o CEP da empresa: ");
+    console.log("Endereço inserido com sucesso... ");
+    readline.question("\n Pressione ENTER para continuar...");
   } else if (opcao_escolhida == 5) {
     empresa.telefone = readline.question("Informe o telefone da empresa: ");
     empresa.email = readline.question("Informe o e-mail da empresa: ");
     empresa.site = readline.question("Informe o site da empresa: ");
+    console.log("Dados de contato inserido com sucesso... ");
+    readline.question("\n Pressione ENTER para continuar...");
   } else if (opcao_escolhida == 6) {
     var contador = 0;
     for (contador; contador <= 11; contador++) {
       var meta_mensal = readline.questionFloat(`Informe o valor da meta mensal de ${exibirMeses(contador)}: `);
       empresa.meta_anual.push(meta_mensal);
+      console.log("Meta anual inserido com sucesso... ");
+      // 🔹 PAUSA PARA LEITURA
+      readline.question("\nPressione ENTER para continuar...");
     }
-    console.log(empresa.meta_anual);
   } else if (opcao_escolhida == 7) {
     contador = 1;
     if (empresa.areas_atuacao.length <= 4) {
@@ -81,7 +90,8 @@ while (entra_loop == true) {
       empresa.areas_atuacao.push(area_atuacao);
       contador++;
     }
-    console.log(`Áreas de atuações ${empresa.areas_atuacao.join(", ")} inseridas com sucesso `);
+
+    console.log("Áreas de atuação inserido com sucesso... ");
     // 🔹 PAUSA PARA LEITURA
     readline.question("\nPressione ENTER para continuar...");
   } else if (opcao_escolhida == 8) {
@@ -106,7 +116,7 @@ while (entra_loop == true) {
       salario_bruto: salario_bruto,
     });
 
-    exibirQuadroFuncionarios();
+    console.log("Funcionário inserido com sucesso... ");
     // 🔹 PAUSA PARA LEITURA
     readline.question("\nPressione ENTER para continuar...");
   } else if (opcao_escolhida == 10) {

@@ -58,5 +58,6 @@ export function exibirDetalhamentoFuncionarios() {
     ℹ️ **INFORMAÇÕES ADICIONAIS**
     🏦 Total FGTS (8%): R$ ${totalizador_valor_FGTS.toFixed(2)}
      `;
+  //return texto;
   console.log(texto);
 }
